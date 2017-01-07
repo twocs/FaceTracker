@@ -1,4 +1,5 @@
-FROM ubuntu:latest
+# cloned from https://github.com/Rob-Johnson/ubuntu-opencv
+FROM ubuntu:12.04.5
 
 RUN echo 'deb http://archive.ubuntu.com/ubuntu precise multiverse' >> /etc/apt/sources.list
 RUN apt-get update
