@@ -25,3 +25,11 @@ RUN ldconfig
 
 WORKDIR /
 RUN rm -rf /tmp/*
+
+
+# facetracker
+#git clone git://github.com/kylemcdonald/FaceTracker.git
+#cd FaceTracker
+COPY . /FaceTracker
+WORKDIR /FaceTracker
+RUN make
