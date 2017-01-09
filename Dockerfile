@@ -1,5 +1,8 @@
-# cloned from https://github.com/Rob-Johnson/ubuntu-opencv
+# Ubuntu install cloned from https://github.com/Rob-Johnson/ubuntu-opencv
 FROM ubuntu:12.04.5
+
+# facetracker install from the documentation
+# Note: Getting the example code working with a webcam is not currently supported, because it requires additional libraries
 
 RUN echo 'deb http://archive.ubuntu.com/ubuntu precise multiverse' >> /etc/apt/sources.list
 RUN apt-get update
@@ -25,7 +28,6 @@ RUN ldconfig
 
 WORKDIR /
 RUN rm -rf /tmp/*
-
 
 # facetracker
 #git clone git://github.com/kylemcdonald/FaceTracker.git
